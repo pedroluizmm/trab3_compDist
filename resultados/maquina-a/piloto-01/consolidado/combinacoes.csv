@@ -1,7 +1,0 @@
-maquina,campanha,instancias,nivel,usuarios,cenario,repeticoes,requisicoes_total,falhas_total,tempo_medio_ms_media,tempo_medio_ms_desvio,p95_ms_media,p95_ms_desvio,rps_media,rps_desvio,falhas_pct_media,falhas_pct_desvio,mediana_ms_media,mediana_ms_desvio,p99_ms_media,p99_ms_desvio,pagina_tempo_medio_ms_media,pagina_tempo_medio_ms_desvio,pagina_p95_ms_media,pagina_p95_ms_desvio,pagina_rps_media,pagina_rps_desvio,imagem_tempo_medio_ms_media,imagem_tempo_medio_ms_desvio,imagem_p95_ms_media,imagem_p95_ms_desvio,imagem_rps_media,imagem_rps_desvio,locust_cpu_max_pct,execucoes_com_alerta_cpu,execucoes_com_incidentes
-maquina-a,piloto-01,1,baixa,10,imagem-1mb,1,116,0,18.06,0,48.0,0,2.865,0,0.0,0,22.0,0,64.0,0,32.17,0,63.0,0,1.432,0,3.95,0,18.0,0,1.432,0,29.9,0,0
-maquina-a,piloto-01,1,baixa,10,texto-400kb,1,60,0,44.49,0,74.0,0,1.472,0,0.0,0,40.0,0,79.0,0,44.49,0,74.0,0,1.472,0,,,,,,,2.7,0,0
-maquina-a,piloto-01,1,media,100,imagem-1mb,1,1156,0,16.49,0,44.0,0,28.893,0,0.0,0,19.0,0,120.0,0,30.24,0,55.0,0,14.447,0,2.74,0,4.0,0,14.447,0,8.2,0,0
-maquina-a,piloto-01,1,media,100,texto-400kb,1,394,0,3527.23,0,16000.0,0,9.864,0,0.0,0,60.0,0,16000.0,0,3527.23,0,16000.0,0,9.864,0,,,,,,,19.6,0,0
-maquina-a,piloto-01,1,alta,300,imagem-1mb,1,2619,0,963.6,0,7500.0,0,65.363,0,0.0,0,290.0,0,14000.0,0,1828.67,0,11000.0,0,32.719,0,96.54,0,110.0,0,32.644,0,12.2,0,0
-maquina-a,piloto-01,1,alta,300,texto-400kb,1,748,139,8656.99,0,30000.0,0,18.678,0,18.583,0,1300.0,0,30000.0,0,8656.99,0,30000.0,0,18.678,0,,,,,,,44.0,0,0
