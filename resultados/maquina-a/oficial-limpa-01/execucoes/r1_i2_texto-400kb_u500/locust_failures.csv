@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,texto-400kb | pagina,CatchResponseError('HTTP 0'),148,2026-10-22T07:51:08Z,2026-10-22T07:53:27Z
+GET,texto-400kb | pagina,CatchResponseError('HTTP 502'),329,2026-10-22T07:51:08Z,2026-10-22T07:52:19Z
+GET,texto-400kb | pagina,CatchResponseError('HTTP 504'),5,2026-10-22T07:52:16Z,2026-10-22T07:53:27Z

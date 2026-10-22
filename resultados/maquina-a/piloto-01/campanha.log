@@ -1,0 +1,27 @@
+2026-10-22 02:57:38,808 INFO [1/6]
+2026-10-22 02:57:38,811 INFO == r1_i1_texto-400kb_u10: restauracao controlada
+2026-10-22 02:58:02,500 INFO r1_i1_texto-400kb_u10: Locust 10 usuarios, rampa 20s (0.500/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 02:59:04,021 INFO r1_i1_texto-400kb_u10: 60 req, 0 falhas (0.0%), media 44.49 ms, p95 74 ms, 1.472 req/s; locust CPU med 0.7% max 2.7%
+2026-10-22 02:59:04,021 INFO [2/6]
+2026-10-22 02:59:04,022 INFO == r1_i1_texto-400kb_u100: restauracao controlada
+2026-10-22 02:59:26,076 INFO r1_i1_texto-400kb_u100: Locust 100 usuarios, rampa 20s (5.000/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:00:27,637 INFO r1_i1_texto-400kb_u100: 394 req, 0 falhas (0.0%), media 3527.23 ms, p95 16000 ms, 9.864 req/s; locust CPU med 5.0% max 19.6%
+2026-10-22 03:00:27,639 INFO [3/6]
+2026-10-22 03:00:27,641 INFO == r1_i1_texto-400kb_u300: restauracao controlada
+2026-10-22 03:00:49,637 INFO r1_i1_texto-400kb_u300: Locust 300 usuarios, rampa 20s (15.000/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:01:51,490 INFO r1_i1_texto-400kb_u300: 748 req, 139 falhas (18.583%), media 8656.99 ms, p95 30000 ms, 18.678 req/s; locust CPU med 8.5% max 44.0%
+2026-10-22 03:01:51,490 INFO [4/6]
+2026-10-22 03:01:51,491 INFO == r1_i1_imagem-1mb_u10: restauracao controlada
+2026-10-22 03:02:13,336 INFO r1_i1_imagem-1mb_u10: Locust 10 usuarios, rampa 20s (0.500/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:03:15,096 INFO r1_i1_imagem-1mb_u10: 116 req, 0 falhas (0.0%), media 18.06 ms, p95 48 ms, 2.865 req/s; locust CPU med 3.8% max 29.9%
+2026-10-22 03:03:15,096 INFO [5/6]
+2026-10-22 03:03:15,097 INFO == r1_i1_imagem-1mb_u100: restauracao controlada
+2026-10-22 03:03:36,290 INFO r1_i1_imagem-1mb_u100: Locust 100 usuarios, rampa 20s (5.000/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:04:38,651 INFO r1_i1_imagem-1mb_u100: 1156 req, 0 falhas (0.0%), media 16.49 ms, p95 44 ms, 28.893 req/s; locust CPU med 3.9% max 8.2%
+2026-10-22 03:04:38,653 INFO [6/6]
+2026-10-22 03:04:38,654 INFO == r1_i1_imagem-1mb_u300: restauracao controlada
+2026-10-22 03:04:59,244 INFO r1_i1_imagem-1mb_u300: Locust 300 usuarios, rampa 20s (15.000/s), medicao 40s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:06:00,823 INFO r1_i1_imagem-1mb_u300: 2619 req, 0 falhas (0.0%), media 963.6 ms, p95 7500 ms, 65.363 req/s; locust CPU med 8.9% max 12.2%
+2026-10-22 03:06:00,824 INFO Restaurando o estado padrao (3 instancias)
+2026-10-22 03:06:24,242 INFO Verificacao final do conteudo: aprovada
+2026-10-22 03:06:24,242 INFO 6/6 execucoes concluidas nesta chamada; resultados em /home/pedro/compDist/Trabalho3-Docker/resultados/maquina-a/piloto-01

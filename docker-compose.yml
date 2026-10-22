@@ -1,9 +1,10 @@
-name: ${COMPOSE_PROJECT_NAME:-wordpress-experimento}
+name: ${COMPOSE_PROJECT_NAME:-trabalho3-experimento}
 services:
   database:
     image: mysql:5.7
     platform: linux/amd64
-    command: ["--innodb-buffer-pool-size=64M", "--max-connections=40"]
+    # max-connections cobre 3 instancias x WP_MAX_WORKERS (25) com folga.
+    command: ["--innodb-buffer-pool-size=64M", "--max-connections=100"]
     environment:
       MYSQL_DATABASE: experimento
       MYSQL_USER: aplicacao
@@ -35,12 +36,16 @@ services:
     image: wordpress:5.4.2-php7.2-apache
     user: "${LOCAL_UID:?Execute scripts/preparar.py}:${LOCAL_GID:?Execute scripts/preparar.py}"
     entrypoint: ["/bin/sh", "/opt/experimento/abrir-wordpress.sh"]
+    # Cada instancia emula um servidor pequeno; sem limite, uma unica instancia usaria toda a CPU do host.
+    cpus: ${WP_CPUS:-1.0}
+    mem_limit: ${WP_MEMORIA:-1536m}
     environment:
       APACHE_RUN_USER: "#${LOCAL_UID}"
       APACHE_RUN_GROUP: "#${LOCAL_GID}"
       WP_DATABASE: experimento
       WP_USER: aplicacao
       SITE_URL: ${SITE_URL:-http://127.0.0.1:8086}
+      WP_MAX_WORKERS: ${WP_MAX_WORKERS:-25}
     secrets:
       - senha_aplicacao
       - semente_sessao
@@ -63,6 +68,10 @@ services:
         source: ./scripts/abrir-wordpress.sh
         target: /opt/experimento/abrir-wordpress.sh
         read_only: true
+      - type: bind
+        source: ./config/apache/mpm_prefork.conf
+        target: /etc/apache2/mods-available/mpm_prefork.conf
+        read_only: true
     networks: [requisicoes, persistencia]
     healthcheck:
       test: ["CMD", "php", "-r", "exit(is_file('/var/www/html/wp-includes/version.php') && @fsockopen('127.0.0.1', 80) ? 0 : 1);"]
@@ -74,12 +83,16 @@ services:
     image: wordpress:5.4.2-php7.2-apache
     user: "${LOCAL_UID:?Execute scripts/preparar.py}:${LOCAL_GID:?Execute scripts/preparar.py}"
     entrypoint: ["/bin/sh", "/opt/experimento/abrir-wordpress.sh"]
+    # Cada instancia emula um servidor pequeno; sem limite, uma unica instancia usaria toda a CPU do host.
+    cpus: ${WP_CPUS:-1.0}
+    mem_limit: ${WP_MEMORIA:-1536m}
     environment:
       APACHE_RUN_USER: "#${LOCAL_UID}"
       APACHE_RUN_GROUP: "#${LOCAL_GID}"
       WP_DATABASE: experimento
       WP_USER: aplicacao
       SITE_URL: ${SITE_URL:-http://127.0.0.1:8086}
+      WP_MAX_WORKERS: ${WP_MAX_WORKERS:-25}
     secrets:
       - senha_aplicacao
       - semente_sessao
@@ -102,6 +115,10 @@ services:
         source: ./scripts/abrir-wordpress.sh
         target: /opt/experimento/abrir-wordpress.sh
         read_only: true
+      - type: bind
+        source: ./config/apache/mpm_prefork.conf
+        target: /etc/apache2/mods-available/mpm_prefork.conf
+        read_only: true
     networks: [requisicoes, persistencia]
     healthcheck:
       test: ["CMD", "php", "-r", "exit(is_file('/var/www/html/wp-includes/version.php') && @fsockopen('127.0.0.1', 80) ? 0 : 1);"]
@@ -113,12 +130,16 @@ services:
     image: wordpress:5.4.2-php7.2-apache
     user: "${LOCAL_UID:?Execute scripts/preparar.py}:${LOCAL_GID:?Execute scripts/preparar.py}"
     entrypoint: ["/bin/sh", "/opt/experimento/abrir-wordpress.sh"]
+    # Cada instancia emula um servidor pequeno; sem limite, uma unica instancia usaria toda a CPU do host.
+    cpus: ${WP_CPUS:-1.0}
+    mem_limit: ${WP_MEMORIA:-1536m}
     environment:
       APACHE_RUN_USER: "#${LOCAL_UID}"
       APACHE_RUN_GROUP: "#${LOCAL_GID}"
       WP_DATABASE: experimento
       WP_USER: aplicacao
       SITE_URL: ${SITE_URL:-http://127.0.0.1:8086}
+      WP_MAX_WORKERS: ${WP_MAX_WORKERS:-25}
     secrets:
       - senha_aplicacao
       - semente_sessao
@@ -140,6 +161,10 @@ services:
       - type: bind
         source: ./scripts/abrir-wordpress.sh
         target: /opt/experimento/abrir-wordpress.sh
+        read_only: true
+      - type: bind
+        source: ./config/apache/mpm_prefork.conf
+        target: /etc/apache2/mods-available/mpm_prefork.conf
         read_only: true
     networks: [requisicoes, persistencia]
     healthcheck:
@@ -166,12 +191,67 @@ services:
         bind:
           create_host_path: false
       - type: bind
+        source: ./config/instancias/${WP_INSTANCIAS:-3}.conf
+        target: /etc/nginx/instancias.conf
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
         source: ./html
         target: /usr/share/nginx/html
         read_only: true
         bind:
           create_host_path: false
     networks: [requisicoes]
+
+  # Gerador de carga (Trabalho 3). Alvo: nome do servico Nginx na rede do Compose.
+  # Interativo: docker compose --profile carga up locust -> http://127.0.0.1:8089
+  # Medicoes: scripts/experimento.py executa-o em modo headless.
+  locust:
+    image: locustio/locust:2.46.7
+    profiles: [carga]
+    user: "${LOCAL_UID}:${LOCAL_GID}"
+    command: ["-f", "/mnt/locust/locustfile.py"]
+    environment:
+      LOCUST_HOST: http://nginx
+      CENARIO: ${CENARIO:-imagem-1mb}
+      ESPERA_MIN: ${ESPERA_MIN:-5}
+      ESPERA_MAX: ${ESPERA_MAX:-9}
+    cpus: ${LOCUST_CPUS:-4.0}
+    depends_on: [nginx]
+    ports:
+      - target: 8089
+        published: "8089"
+        host_ip: 127.0.0.1
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: ./locust
+        target: /mnt/locust
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultados
+        target: /mnt/resultados
+    networks: [requisicoes]
+
+  # Consolidacao e graficos com versoes fixadas (o host nao precisa de matplotlib).
+  analise:
+    build: ./docker/analise
+    image: trabalho3-analise:1
+    profiles: [ferramentas]
+    user: "${LOCAL_UID}:${LOCAL_GID}"
+    working_dir: /projeto
+    volumes:
+      - type: bind
+        source: ./scripts
+        target: /projeto/scripts
+        read_only: true
+      - type: bind
+        source: ./resultados
+        target: /projeto/resultados
+    network_mode: none
 
 networks:
   requisicoes:

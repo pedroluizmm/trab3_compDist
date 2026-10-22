@@ -1,0 +1,111 @@
+{
+  "status": "ok",
+  "parametros": {
+    "usuarios": 10,
+    "taxa_spawn_por_s": 0.5,
+    "rampa_s": 20,
+    "duracao_s": 40,
+    "espera_s": [
+      5,
+      9
+    ],
+    "instancias": 1,
+    "cenario": "imagem-1mb",
+    "nivel": "baixa",
+    "repeticao": 1
+  },
+  "upstreams": [
+    "172.21.0.2:80"
+  ],
+  "locust_codigo_saida": 0,
+  "estados_conteineres": {
+    "wordpress1": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    },
+    "nginx": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": null
+    },
+    "database": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    }
+  },
+  "cpu_docker_stats": {
+    "nginx-1": {
+      "media": 0.7,
+      "max": 5.0
+    },
+    "wordpress1-1": {
+      "media": 4.1,
+      "max": 10.8
+    },
+    "database-1": {
+      "media": 2.2,
+      "max": 9.2
+    },
+    "locust-r1_i1_imagem-1mb_u10": {
+      "media": 3.8,
+      "max": 29.9
+    },
+    "outros-projetos": {
+      "media": 33.0,
+      "max": 179.8
+    },
+    "vm-total": {
+      "media": 3.7,
+      "max": 12.0
+    }
+  },
+  "incidentes": [],
+  "resumo": {
+    "maquina": "maquina-a",
+    "campanha": "piloto-01",
+    "execucao": "r1_i1_imagem-1mb_u10",
+    "repeticao": 1,
+    "instancias": 1,
+    "cenario": "imagem-1mb",
+    "nivel": "baixa",
+    "usuarios": 10,
+    "rampa_s": 20,
+    "duracao_s": 40,
+    "inicio_utc": "2026-10-22T06:02:13+00:00",
+    "fim_utc": "2026-10-22T06:03:14+00:00",
+    "status": "ok",
+    "requisicoes": 116,
+    "falhas": 0,
+    "falhas_pct": 0.0,
+    "tempo_medio_ms": 18.06,
+    "mediana_ms": "22",
+    "p95_ms": "48",
+    "p99_ms": "64",
+    "max_ms": 68.2,
+    "rps": 2.865,
+    "pagina_tempo_medio_ms": 32.17,
+    "pagina_p95_ms": "63",
+    "pagina_rps": 1.432,
+    "imagem_tempo_medio_ms": 3.95,
+    "imagem_p95_ms": "18",
+    "imagem_rps": 1.432,
+    "locust_cpu_medio_pct": 3.8,
+    "locust_cpu_max_pct": 29.9,
+    "locust_alerta_cpu": false,
+    "wordpress_cpu_medio_pct": 4.1,
+    "vm_cpu_medio_pct": 3.7,
+    "outros_projetos_cpu_medio_pct": 33.0,
+    "req_wordpress1": 152,
+    "req_wordpress2": 0,
+    "req_wordpress3": 0,
+    "incidentes": ""
+  }
+}

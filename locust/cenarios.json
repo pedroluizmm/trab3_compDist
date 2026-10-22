@@ -1,0 +1,25 @@
+{
+  "gerado_utc": "2026-10-22T05:53:53+00:00",
+  "host_canonico": "127.0.0.1:8086",
+  "cenarios": {
+    "imagem-1mb": {
+      "pagina": "/?p=5",
+      "pagina_bytes_minimo": 370,
+      "imagens": {
+        "/wp-content/uploads/2026/10/cenario-1-imagem-1mb.jpg": 1004398
+      }
+    },
+    "texto-400kb": {
+      "pagina": "/?p=8",
+      "pagina_bytes_minimo": 399999,
+      "imagens": {}
+    },
+    "imagem-300kb": {
+      "pagina": "/?p=10",
+      "pagina_bytes_minimo": 378,
+      "imagens": {
+        "/wp-content/uploads/2026/10/cenario-3-imagem-300kb.jpg": 302426
+      }
+    }
+  }
+}

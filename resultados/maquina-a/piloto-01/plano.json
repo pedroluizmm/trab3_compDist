@@ -1,0 +1,99 @@
+{
+  "parametros": {
+    "maquina": "maquina-a",
+    "campanha": "piloto-01",
+    "usuarios": [
+      10,
+      100,
+      300
+    ],
+    "instancias": [
+      1
+    ],
+    "cenarios": [
+      "texto-400kb",
+      "imagem-1mb"
+    ],
+    "repeticoes": 1,
+    "rampa": 20,
+    "duracao": 40,
+    "resfriamento": 10,
+    "espera_min": 5,
+    "espera_max": 9
+  },
+  "niveis": {
+    "baixa": 10,
+    "media": 100,
+    "alta": 300
+  },
+  "ordem": [
+    [
+      1,
+      1,
+      "texto-400kb",
+      "baixa",
+      10
+    ],
+    [
+      1,
+      1,
+      "texto-400kb",
+      "media",
+      100
+    ],
+    [
+      1,
+      1,
+      "texto-400kb",
+      "alta",
+      300
+    ],
+    [
+      1,
+      1,
+      "imagem-1mb",
+      "baixa",
+      10
+    ],
+    [
+      1,
+      1,
+      "imagem-1mb",
+      "media",
+      100
+    ],
+    [
+      1,
+      1,
+      "imagem-1mb",
+      "alta",
+      300
+    ]
+  ],
+  "manifesto_cenarios_sha256": "418871f9bd86d17d1df58b957d172b33937f7d1a6712d4fe1f2feb8b3b5fc10e",
+  "manifesto_cenarios": {
+    "gerado_utc": "2026-10-22T05:53:53+00:00",
+    "host_canonico": "127.0.0.1:8086",
+    "cenarios": {
+      "imagem-1mb": {
+        "pagina": "/?p=5",
+        "pagina_bytes_minimo": 370,
+        "imagens": {
+          "/wp-content/uploads/2026/10/cenario-1-imagem-1mb.jpg": 1004398
+        }
+      },
+      "texto-400kb": {
+        "pagina": "/?p=8",
+        "pagina_bytes_minimo": 399999,
+        "imagens": {}
+      },
+      "imagem-300kb": {
+        "pagina": "/?p=10",
+        "pagina_bytes_minimo": 378,
+        "imagens": {
+          "/wp-content/uploads/2026/10/cenario-3-imagem-300kb.jpg": 302426
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[2026-10-22 06:10:12,229] cdc9b97b7cde/INFO/locust.main: Starting Locust 2.46.7
+[2026-10-22 06:10:12,229] cdc9b97b7cde/INFO/locust.main: Run time limit set to 60 seconds
+[2026-10-22 06:10:12,230] cdc9b97b7cde/INFO/locust.runners: Ramping to 300 users at a rate of 15.00 per second
+[2026-10-22 06:10:31,259] cdc9b97b7cde/INFO/locust.runners: All users spawned: {"LeitorDoPost": 300} (300 total users)
+[2026-10-22 06:10:31,259] cdc9b97b7cde/INFO/locust.runners: Resetting stats
+
+[2026-10-22 06:11:12,029] cdc9b97b7cde/INFO/locust.main: --run-time limit reached, shutting down
+[2026-10-22 06:11:12,204] cdc9b97b7cde/INFO/locust.main: Shutting down (exit code 0)

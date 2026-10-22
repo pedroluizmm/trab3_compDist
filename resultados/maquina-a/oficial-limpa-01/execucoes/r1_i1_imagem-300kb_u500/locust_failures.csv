@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,imagem-300kb | imagem,CatchResponseError('HTTP 504'),119,2026-10-22T07:41:32Z,2026-10-22T07:44:24Z
+GET,imagem-300kb | pagina,CatchResponseError('HTTP 504'),609,2026-10-22T07:41:29Z,2026-10-22T07:44:26Z

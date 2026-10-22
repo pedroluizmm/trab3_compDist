@@ -1,0 +1,76 @@
+{
+  "data_utc": "2026-10-22T05:53:53+00:00",
+  "aprovado": true,
+  "problemas": [],
+  "cenarios": [
+    {
+      "cenario": "imagem-1mb",
+      "slug": "cenario-1-imagem-1mb",
+      "post_id": 5,
+      "criado_agora": false,
+      "caminho": "/?p=5",
+      "tamanho_conteudo_bytes": 370,
+      "alvo_bytes": 1000000,
+      "imagens": [
+        {
+          "anexo_id": 6,
+          "caminho": "/wp-content/uploads/2026/10/cenario-1-imagem-1mb.jpg",
+          "tamanho_bytes": 1004398,
+          "sha256": "6b2ed8a9c55b7cea49e108789130bee3bb32c7b69ba04267e9c7a041d964a639",
+          "http": {
+            "status": 200,
+            "bytes": 1004398,
+            "sha256_confere": true
+          }
+        }
+      ],
+      "desvio_alvo": 0.0044,
+      "http_pagina": {
+        "status": 200,
+        "bytes": 31311
+      }
+    },
+    {
+      "cenario": "texto-400kb",
+      "slug": "cenario-2-texto-400kb",
+      "post_id": 8,
+      "criado_agora": false,
+      "caminho": "/?p=8",
+      "tamanho_conteudo_bytes": 399999,
+      "alvo_bytes": 400000,
+      "imagens": [],
+      "desvio_alvo": 0,
+      "http_pagina": {
+        "status": 200,
+        "bytes": 408247
+      }
+    },
+    {
+      "cenario": "imagem-300kb",
+      "slug": "cenario-3-imagem-300kb",
+      "post_id": 10,
+      "criado_agora": false,
+      "caminho": "/?p=10",
+      "tamanho_conteudo_bytes": 378,
+      "alvo_bytes": 300000,
+      "imagens": [
+        {
+          "anexo_id": 11,
+          "caminho": "/wp-content/uploads/2026/10/cenario-3-imagem-300kb.jpg",
+          "tamanho_bytes": 302426,
+          "sha256": "0cc7eb50a47ac9d4ceb28aae147e5cc124cdfaf48de0abf5ed7b1878a0985238",
+          "http": {
+            "status": 200,
+            "bytes": 302426,
+            "sha256_confere": true
+          }
+        }
+      ],
+      "desvio_alvo": 0.0081,
+      "http_pagina": {
+        "status": 200,
+        "bytes": 30990
+      }
+    }
+  ]
+}

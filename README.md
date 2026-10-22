@@ -1,4 +1,12 @@
-# WordPress com balanceamento de carga
+# Trabalho 3 — preparacao independente
+
+Esta branch deriva do Trabalho 2. A preparacao Windows esta descrita em
+[documentacao/PREPARACAO-WINDOWS.md](documentacao/PREPARACAO-WINDOWS.md).
+Os resultados APROVADO_RUNTIME e as capturas abaixo sao evidencias historicas
+do Trabalho 2; nao validam esta copia no Windows. WordPress nao foi instalado
+nesta etapa. O nome Compose desta copia e trabalho3-experimento.
+
+## Documentacao original do Trabalho 2
 
 Autores: Lucas Kohagura, Pedro Luis e Joao Pedro Lopes.
 

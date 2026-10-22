@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "parametros": {
+    "usuarios": 500,
+    "taxa_spawn_por_s": 10.0,
+    "rampa_s": 50,
+    "duracao_s": 200,
+    "espera_s": [
+      5,
+      9
+    ],
+    "instancias": 3,
+    "cenario": "imagem-300kb",
+    "nivel": "media",
+    "repeticao": 1
+  },
+  "upstreams": [
+    "172.21.0.2:80",
+    "172.21.0.4:80",
+    "172.21.0.5:80"
+  ],
+  "locust_codigo_saida": 0,
+  "estados_conteineres": {
+    "wordpress1": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    },
+    "wordpress2": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    },
+    "wordpress3": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    },
+    "nginx": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": null
+    },
+    "database": {
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "RestartCount": 0,
+      "Health": "healthy"
+    }
+  },
+  "cpu_docker_stats": {
+    "nginx-1": {
+      "media": 4.7,
+      "max": 7.9
+    },
+    "wordpress3-1": {
+      "media": 50.8,
+      "max": 79.0
+    },
+    "wordpress2-1": {
+      "media": 49.9,
+      "max": 77.8
+    },
+    "wordpress1-1": {
+      "media": 50.8,
+      "max": 79.0
+    },
+    "database-1": {
+      "media": 41.8,
+      "max": 62.0
+    },
+    "locust-r1_i3_imagem-300kb_u500": {
+      "media": 11.2,
+      "max": 15.3
+    },
+    "outros-projetos": {
+      "media": 0.0,
+      "max": 0.0
+    },
+    "vm-total": {
+      "media": 11.0,
+      "max": 13.6
+    }
+  },
+  "incidentes": [],
+  "resumo": {
+    "maquina": "maquina-a",
+    "campanha": "oficial-limpa-01",
+    "execucao": "r1_i3_imagem-300kb_u500",
+    "repeticao": 1,
+    "instancias": 3,
+    "cenario": "imagem-300kb",
+    "nivel": "media",
+    "usuarios": 500,
+    "rampa_s": 50,
+    "duracao_s": 200,
+    "inicio_utc": "2026-10-22T08:07:52+00:00",
+    "fim_utc": "2026-10-22T08:12:03+00:00",
+    "status": "ok",
+    "requisicoes": 28454,
+    "falhas": 0,
+    "falhas_pct": 0.0,
+    "tempo_medio_ms": 17.65,
+    "mediana_ms": "20",
+    "p95_ms": "40",
+    "p99_ms": "110",
+    "max_ms": 610.0,
+    "rps": 142.048,
+    "pagina_tempo_medio_ms": 33.83,
+    "pagina_p95_ms": "60",
+    "pagina_rps": 71.024,
+    "imagem_tempo_medio_ms": 1.48,
+    "imagem_p95_ms": "2",
+    "imagem_rps": 71.024,
+    "locust_cpu_medio_pct": 11.2,
+    "locust_cpu_max_pct": 15.3,
+    "locust_alerta_cpu": false,
+    "wordpress_cpu_medio_pct": 151.5,
+    "vm_cpu_medio_pct": 11.0,
+    "outros_projetos_cpu_medio_pct": 0.0,
+    "req_wordpress1": 10830,
+    "req_wordpress2": 10830,
+    "req_wordpress3": 10830,
+    "incidentes": ""
+  }
+}

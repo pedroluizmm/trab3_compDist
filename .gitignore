@@ -44,3 +44,7 @@ ACESSO-LOCAL.txt
 # Credenciais do experimento e novos dados persistentes
 segredos/
 data/
+
+# Trabalho 3: logs de campanha sao evidencia; testes rapidos nao
+!resultados/**/*.log
+resultados/_smoke/

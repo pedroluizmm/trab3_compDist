@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-20T13:29:12.715695+00:00",
+  "status": "APPLY 2 BLOCKED",
+  "etapa": "pre-verificacao de ACL",
+  "projeto": "C:\\compDist\\Trabalho3-Docker",
+  "branch": "trabalho3/windows-preparacao",
+  "resultado": "Pasta segredos e tres arquivos ainda herdam leitura para Usuarios (S-1-5-32-545) e modificacao para Usuarios autenticados (S-1-5-11), sem regras Deny observadas.",
+  "acao": "Interrompido conforme instrucao; nenhuma imagem baixada, servico iniciado, segredo lido ou regenerado.",
+  "nao_verificados": [
+    "Compose nesta tentativa",
+    "porta 8086 nesta tentativa",
+    "MySQL",
+    "WordPress",
+    "Nginx",
+    "HTTP e X-Upstream",
+    "bind mounts e persistencia"
+  ],
+  "correcao_proposta": "Restringir apenas segredos e seus arquivos a conta pessoal, SYSTEM e Administradores, removendo heranca ampla; requer conta com permissao de alterar ACL. Reinspecionar antes de iniciar."
+}

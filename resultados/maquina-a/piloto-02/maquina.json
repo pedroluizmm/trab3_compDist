@@ -1,0 +1,31 @@
+{
+  "maquina": "maquina-a",
+  "registrado_utc": "2026-10-22T06:06:57+00:00",
+  "cpu_modelo": "Intel(R) Core(TM) Ultra 7 155H",
+  "cpus_logicas": 22,
+  "threads_por_nucleo": "2",
+  "memoria_vm_gib": 7.44,
+  "sistema": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "kernel": "6.6.114.1-microsoft-standard-WSL2",
+  "wsl": true,
+  "docker_servidor": "29.4.3",
+  "docker_os": "Docker Desktop",
+  "docker_ncpu": 22,
+  "docker_memoria_gib": 7.44,
+  "compose": "5.1.3",
+  "limites": {
+    "WP_CPUS": "1.0",
+    "WP_MEMORIA": "1536m",
+    "WP_MAX_WORKERS": "25",
+    "LOCUST_CPUS": "4.0",
+    "mysql_max_connections": 100
+  },
+  "imagens": {
+    "mysql:5.7": "sha256:4bc6bc963e6d8443453676cae56536f4b8156d78bae03c0145cbe47c2aad73bb",
+    "wordpress:5.4.2-php7.2-apache": "sha256:efaa511f811de855bcc1a8eafc58339cbf9a315ad95f419f829025631facf6a4",
+    "nginx:1.19.0": "sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133",
+    "locustio/locust:2.46.7": "sha256:8492fcaa6a07314551590f579219204e459d9fdc9dde060843bd2896e7a7259f"
+  },
+  "outros_conteineres_ativos": 2,
+  "observacao": "Gerador (Locust) e aplicacao compartilham a mesma maquina/VM."
+}

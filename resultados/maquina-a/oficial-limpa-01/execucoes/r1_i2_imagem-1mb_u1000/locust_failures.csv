@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,imagem-1mb | pagina,CatchResponseError('HTTP 0'),2283,2026-10-22T08:27:00Z,2026-10-22T08:30:21Z
+GET,imagem-1mb | imagem,CatchResponseError('HTTP 502'),328,2026-10-22T08:27:22Z,2026-10-22T08:28:45Z
+GET,imagem-1mb | imagem,CatchResponseError('HTTP 500'),1197,2026-10-22T08:27:01Z,2026-10-22T08:30:20Z
+GET,imagem-1mb | pagina,CatchResponseError('HTTP 502'),218,2026-10-22T08:27:22Z,2026-10-22T08:28:45Z
+GET,imagem-1mb | imagem,CatchResponseError('HTTP 504'),2,2026-10-22T08:29:04Z,2026-10-22T08:29:04Z
+GET,imagem-1mb | imagem,CatchResponseError('HTTP 0'),1934,2026-10-22T08:27:01Z,2026-10-22T08:30:21Z
+GET,imagem-1mb | pagina,CatchResponseError('HTTP 500'),1167,2026-10-22T08:27:00Z,2026-10-22T08:30:21Z

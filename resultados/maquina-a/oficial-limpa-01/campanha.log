@@ -1,0 +1,111 @@
+2026-10-22 03:49:45,933 INFO [1/27]
+2026-10-22 03:49:45,935 INFO == r1_i1_imagem-1mb_u100: restauracao controlada
+2026-10-22 03:50:09,625 INFO r1_i1_imagem-1mb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:54:21,045 INFO r1_i1_imagem-1mb_u100: 5692 req, 0 falhas (0.0%), media 11.37 ms, p95 24 ms, 28.489 req/s; locust CPU med 3.1% max 7.7%
+2026-10-22 03:54:21,045 INFO [2/27]
+2026-10-22 03:54:21,046 INFO == r1_i1_texto-400kb_u100: restauracao controlada
+2026-10-22 03:54:40,951 INFO r1_i1_texto-400kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 03:58:52,212 INFO r1_i1_texto-400kb_u100: 2849 req, 0 falhas (0.0%), media 43.24 ms, p95 84 ms, 14.23 req/s; locust CPU med 2.2% max 3.8%
+2026-10-22 03:58:52,213 INFO [3/27]
+2026-10-22 03:58:52,213 INFO == r1_i1_imagem-300kb_u100: restauracao controlada
+2026-10-22 03:59:12,065 INFO r1_i1_imagem-300kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 04:03:23,233 INFO r1_i1_imagem-300kb_u100: 5680 req, 0 falhas (0.0%), media 11.03 ms, p95 24 ms, 28.384 req/s; locust CPU med 2.2% max 3.4%
+2026-10-22 04:03:23,234 INFO [4/27]
+2026-10-22 04:03:23,234 INFO == r1_i2_imagem-1mb_u100: restauracao controlada
+2026-10-22 04:03:49,577 INFO r1_i2_imagem-1mb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:08:00,701 INFO r1_i2_imagem-1mb_u100: 5732 req, 0 falhas (0.0%), media 11.79 ms, p95 24 ms, 28.679 req/s; locust CPU med 4.0% max 6.3%
+2026-10-22 04:08:00,702 INFO [5/27]
+2026-10-22 04:08:00,703 INFO == r1_i2_texto-400kb_u100: restauracao controlada
+2026-10-22 04:08:22,062 INFO r1_i2_texto-400kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:12:33,173 INFO r1_i2_texto-400kb_u100: 2839 req, 0 falhas (0.0%), media 38.75 ms, p95 45 ms, 14.182 req/s; locust CPU med 2.3% max 3.5%
+2026-10-22 04:12:33,173 INFO [6/27]
+2026-10-22 04:12:33,173 INFO == r1_i2_imagem-300kb_u100: restauracao controlada
+2026-10-22 04:12:54,318 INFO r1_i2_imagem-300kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:17:05,539 INFO r1_i2_imagem-300kb_u100: 5674 req, 0 falhas (0.0%), media 10.97 ms, p95 23 ms, 28.349 req/s; locust CPU med 2.4% max 3.8%
+2026-10-22 04:17:05,540 INFO [7/27]
+2026-10-22 04:17:05,540 INFO == r1_i3_imagem-1mb_u100: restauracao controlada
+2026-10-22 04:17:33,375 INFO r1_i3_imagem-1mb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 04:21:44,653 INFO r1_i3_imagem-1mb_u100: 5726 req, 0 falhas (0.0%), media 11.91 ms, p95 24 ms, 28.606 req/s; locust CPU med 3.9% max 5.8%
+2026-10-22 04:21:44,654 INFO [8/27]
+2026-10-22 04:21:44,654 INFO == r1_i3_texto-400kb_u100: restauracao controlada
+2026-10-22 04:22:07,229 INFO r1_i3_texto-400kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 04:26:18,438 INFO r1_i3_texto-400kb_u100: 2852 req, 0 falhas (0.0%), media 39.13 ms, p95 46 ms, 14.248 req/s; locust CPU med 2.4% max 4.3%
+2026-10-22 04:26:18,438 INFO [9/27]
+2026-10-22 04:26:18,438 INFO == r1_i3_imagem-300kb_u100: restauracao controlada
+2026-10-22 04:26:40,942 INFO r1_i3_imagem-300kb_u100: Locust 100 usuarios, rampa 50s (2.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 04:30:52,189 INFO r1_i3_imagem-300kb_u100: 5710 req, 0 falhas (0.0%), media 11.23 ms, p95 24 ms, 28.52 req/s; locust CPU med 2.2% max 3.4%
+2026-10-22 04:30:52,190 INFO [10/27]
+2026-10-22 04:30:52,190 INFO == r1_i1_imagem-1mb_u500: restauracao controlada
+2026-10-22 04:31:14,411 INFO r1_i1_imagem-1mb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 04:35:25,880 INFO r1_i1_imagem-1mb_u500: 14700 req, 871 falhas (5.925%), media 3266.33 ms, p95 30000 ms, 73.382 req/s; locust CPU med 8.6% max 11.9%
+2026-10-22 04:35:25,880 INFO [11/27]
+2026-10-22 04:35:25,881 INFO == r1_i1_texto-400kb_u500: restauracao controlada
+2026-10-22 04:35:45,773 INFO r1_i1_texto-400kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 04:39:57,335 INFO r1_i1_texto-400kb_u500: 5113 req, 2592 falhas (50.694%), media 12493.21 ms, p95 33000 ms, 25.54 req/s; locust CPU med 3.5% max 5.4%
+2026-10-22 04:39:57,335 INFO [12/27]
+2026-10-22 04:39:57,336 INFO == r1_i1_imagem-300kb_u500: restauracao controlada
+2026-10-22 04:40:17,383 INFO r1_i1_imagem-300kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 04:44:28,909 INFO r1_i1_imagem-300kb_u500: 15339 req, 728 falhas (4.746%), media 2995.29 ms, p95 30000 ms, 76.565 req/s; locust CPU med 6.3% max 7.8%
+2026-10-22 04:44:28,910 INFO [13/27]
+2026-10-22 04:44:28,910 INFO == r1_i2_imagem-1mb_u500: restauracao controlada
+2026-10-22 04:44:55,708 INFO r1_i2_imagem-1mb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:49:07,437 INFO r1_i2_imagem-1mb_u500: 25194 req, 0 falhas (0.0%), media 464.53 ms, p95 880 ms, 125.637 req/s; locust CPU med 16.3% max 22.7%
+2026-10-22 04:49:07,437 INFO [14/27]
+2026-10-22 04:49:07,438 INFO == r1_i2_texto-400kb_u500: restauracao controlada
+2026-10-22 04:49:28,756 INFO r1_i2_texto-400kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:53:40,397 INFO r1_i2_texto-400kb_u500: 6455 req, 482 falhas (7.467%), media 7726.35 ms, p95 43000 ms, 32.218 req/s; locust CPU med 6.3% max 9.3%
+2026-10-22 04:53:40,398 INFO [15/27]
+2026-10-22 04:53:40,398 INFO == r1_i2_imagem-300kb_u500: restauracao controlada
+2026-10-22 04:54:01,828 INFO r1_i2_imagem-300kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 04:58:13,804 INFO r1_i2_imagem-300kb_u500: 26014 req, 0 falhas (0.0%), media 364.44 ms, p95 900 ms, 129.744 req/s; locust CPU med 10.5% max 13.4%
+2026-10-22 04:58:13,805 INFO [16/27]
+2026-10-22 04:58:13,805 INFO == r1_i3_imagem-1mb_u500: restauracao controlada
+2026-10-22 04:58:42,449 INFO r1_i3_imagem-1mb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:02:54,290 INFO r1_i3_imagem-1mb_u500: 28444 req, 0 falhas (0.0%), media 19.62 ms, p95 46 ms, 141.988 req/s; locust CPU med 17.7% max 25.1%
+2026-10-22 05:02:54,291 INFO [17/27]
+2026-10-22 05:02:54,291 INFO == r1_i3_texto-400kb_u500: restauracao controlada
+2026-10-22 05:03:17,272 INFO r1_i3_texto-400kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:07:29,316 INFO r1_i3_texto-400kb_u500: 8879 req, 2 falhas (0.023%), media 3869.82 ms, p95 28000 ms, 44.311 req/s; locust CPU med 8.8% max 12.2%
+2026-10-22 05:07:29,316 INFO [18/27]
+2026-10-22 05:07:29,317 INFO == r1_i3_imagem-300kb_u500: restauracao controlada
+2026-10-22 05:07:52,708 INFO r1_i3_imagem-300kb_u500: Locust 500 usuarios, rampa 50s (10.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:12:04,658 INFO r1_i3_imagem-300kb_u500: 28454 req, 0 falhas (0.0%), media 17.65 ms, p95 40 ms, 142.048 req/s; locust CPU med 11.2% max 15.3%
+2026-10-22 05:12:04,659 INFO [19/27]
+2026-10-22 05:12:04,659 INFO == r1_i1_imagem-1mb_u1000: restauracao controlada
+2026-10-22 05:12:27,452 INFO r1_i1_imagem-1mb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 05:16:39,739 INFO r1_i1_imagem-1mb_u1000: 28400 req, 17183 falhas (60.504%), media 3681.11 ms, p95 31000 ms, 141.732 req/s; locust CPU med 41.1% max 84.8%
+2026-10-22 05:16:39,740 INFO [20/27]
+2026-10-22 05:16:39,740 INFO == r1_i1_texto-400kb_u1000: restauracao controlada
+2026-10-22 05:16:59,630 INFO r1_i1_texto-400kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 05:21:11,724 INFO r1_i1_texto-400kb_u1000: 15192 req, 12067 falhas (79.43%), media 6370.67 ms, p95 32000 ms, 75.874 req/s; locust CPU med 15.4% max 39.3%
+2026-10-22 05:21:11,724 INFO [21/27]
+2026-10-22 05:21:11,725 INFO == r1_i1_imagem-300kb_u1000: restauracao controlada
+2026-10-22 05:21:31,561 INFO r1_i1_imagem-300kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 1 instancia(s) ['172.21.0.2:80']
+2026-10-22 05:25:43,923 INFO r1_i1_imagem-300kb_u1000: 28210 req, 16821 falhas (59.628%), media 3569.58 ms, p95 31000 ms, 140.757 req/s; locust CPU med 44.7% max 98.8%
+2026-10-22 05:25:43,923 INFO [22/27]
+2026-10-22 05:25:43,924 INFO == r1_i2_imagem-1mb_u1000: restauracao controlada
+2026-10-22 05:26:10,987 INFO r1_i2_imagem-1mb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 05:30:23,379 INFO r1_i2_imagem-1mb_u1000: 28510 req, 7129 falhas (25.005%), media 3419.73 ms, p95 26000 ms, 142.181 req/s; locust CPU med 32.7% max 80.3%
+2026-10-22 05:30:23,380 INFO [23/27]
+2026-10-22 05:30:23,380 INFO == r1_i2_texto-400kb_u1000: restauracao controlada
+2026-10-22 05:30:45,147 INFO r1_i2_texto-400kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 05:34:57,751 INFO r1_i2_texto-400kb_u1000: 14581 req, 10354 falhas (71.01%), media 6078.93 ms, p95 60000 ms, 72.788 req/s; locust CPU med 24.2% max 80.9%
+2026-10-22 05:34:57,751 INFO [24/27]
+2026-10-22 05:34:57,752 INFO == r1_i2_imagem-300kb_u1000: restauracao controlada
+2026-10-22 05:35:19,208 INFO r1_i2_imagem-300kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 2 instancia(s) ['172.21.0.2:80', '172.21.0.4:80']
+2026-10-22 05:39:31,583 INFO r1_i2_imagem-300kb_u1000: 28931 req, 4729 falhas (16.346%), media 3506.64 ms, p95 27000 ms, 144.253 req/s; locust CPU med 28.2% max 82.5%
+2026-10-22 05:39:31,583 INFO [25/27]
+2026-10-22 05:39:31,584 INFO == r1_i3_imagem-1mb_u1000: restauracao controlada
+2026-10-22 05:39:59,637 INFO r1_i3_imagem-1mb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:44:12,687 INFO r1_i3_imagem-1mb_u1000: 36195 req, 0 falhas (0.0%), media 2010.0 ms, p95 15000 ms, 180.416 req/s; locust CPU med 30.9% max 41.4%
+2026-10-22 05:44:12,687 INFO [26/27]
+2026-10-22 05:44:12,688 INFO == r1_i3_texto-400kb_u1000: restauracao controlada
+2026-10-22 05:44:36,340 INFO r1_i3_texto-400kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:48:49,157 INFO r1_i3_texto-400kb_u1000: 14157 req, 7253 falhas (51.233%), media 6832.04 ms, p95 52000 ms, 70.653 req/s; locust CPU med 27.3% max 50.1%
+2026-10-22 05:48:49,157 INFO [27/27]
+2026-10-22 05:48:49,158 INFO == r1_i3_imagem-300kb_u1000: restauracao controlada
+2026-10-22 05:49:12,668 INFO r1_i3_imagem-300kb_u1000: Locust 1000 usuarios, rampa 50s (20.000/s), medicao 200s, 3 instancia(s) ['172.21.0.2:80', '172.21.0.4:80', '172.21.0.5:80']
+2026-10-22 05:55:17,460 INFO r1_i3_imagem-300kb_u1000: 31113 req, 1867 falhas (6.001%), media 3016.34 ms, p95 23000 ms, 99.581 req/s; locust CPU med 27.9% max 127.5%
+2026-10-22 05:55:17,461 INFO Restaurando o estado padrao (3 instancias)
+2026-10-22 05:55:30,376 INFO Verificacao final do conteudo: aprovada
+2026-10-22 05:55:30,376 INFO 27/27 execucoes concluidas nesta chamada; resultados em /home/pedro/compDist/Trabalho3-Docker/resultados/maquina-a/oficial-limpa-01
